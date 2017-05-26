@@ -45,22 +45,14 @@
           <preparationGoals>org.eclipse.tycho:tycho-versions-plugin:1.1.0-SNAPSHOT:update-eclipse-metadata</preparationGoals>
         </configuration>
       </plugin>
-	  <!--
 				<plugin>
-					<groupId>org.eclipse.tycho</groupId>
-					<artifactId>tycho-versions-plugin</artifactId>
-					<version>${tycho-version}</version>
-					<executions>
-						<execution>
-							<id>updateMetadata</id>
-							<phase>run-preparation-goals</phase>
-							<goals>
-								<goal>update-eclipse-metadata</goal>
-							</goals>
-						</execution>
-					</executions>
-				</plugin>		 
-		 -->
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-scm-plugin</artifactId>
+					<configuration>
+					<includes>**/MANIFEST.MF</includes>
+					</configuration>
+				</plugin>
+	  
       </plugins>
    </build>
    
