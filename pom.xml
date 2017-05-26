@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>at.mschreiber</groupId>
   <artifactId>at.mschreiber.parent</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
   
   <properties>
@@ -12,7 +12,7 @@
     <scm>
       <connection>scm:git:https://github.com/mschreiber/mavenReleaseAndTychoExample.git</connection>
       <developerConnection>scm:git:https://github.com/mschreiber/mavenReleaseAndTychoExample.git</developerConnection>
-	  <tag>ttt</tag>
+	  <tag>at.mschreiber.parent-1.0.0</tag>
   </scm>
   <repositories>
      <repository>
