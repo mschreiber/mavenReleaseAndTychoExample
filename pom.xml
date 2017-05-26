@@ -42,7 +42,7 @@
 				<artifactId>maven-release-plugin</artifactId>
 				<version>2.5.3</version>
 				<configuration>
-					<preparationGoals>org.eclipse.tycho:tycho-versions-plugin:1.1.0-SNAPSHOT:update-eclipse-metadata org.apache.maven.plugins:maven-scm-plugin:1.9.5:add</preparationGoals>
+					<preparationGoals>org.eclipse.tycho:tycho-versions-plugin:1.1.0-SNAPSHOT:update-eclipse-metadata org.apache.maven.plugins:maven-scm-plugin:1.9.5:add org.apache.maven.plugins:maven-scm-plugin:1.9.5:checkin</preparationGoals>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -53,6 +53,7 @@
 						<id>default-cli</id>
 						<goals>
 							<goal>add</goal>
+							<goal>checkin</goal>
 						</goals>
 						<configuration>
 							<includes>**/MANIFEST.MF</includes>
