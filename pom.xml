@@ -57,6 +57,7 @@
 						</goals>
 						<configuration>
 							<includes>**/MANIFEST.MF</includes>
+							<message>blub</message>
 						</configuration>
 					</execution>
 				</executions>
